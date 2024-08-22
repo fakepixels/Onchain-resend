@@ -38,7 +38,7 @@ body {
   margin: 0;
   background-color: var(--palette-bg-black);
   color: var(--palette-bg-white);
-  font-family: Inter, sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
@@ -81,4 +81,10 @@ a {
 
 .templateSection > div {
   max-width: 100%;;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
 }

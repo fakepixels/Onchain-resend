@@ -12,6 +12,11 @@ const config: Config = {
         xl: '1280px',
       },
     },
+    extend: {
+      fontFamily: {
+        'ibm-plex-sans': ['"IBM Plex Sans"', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 };

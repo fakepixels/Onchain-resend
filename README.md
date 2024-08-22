@@ -1,38 +1,45 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/coinbase/onchainkit/main/site/docs/public/logo/v0-27.png">
-    <img alt="OnchainKit logo vibes" src="https://raw.githubusercontent.com/coinbase/onchainkit/main/site/docs/public/logo/v0-27.png" width="auto">
-  </picture>
-</p>
+# Smart Wallet + Resend Demo
 
-# Onchain App Template
+![Smart Wallet + Resend Demo](./public/resend-cbw.png)
 
-An Onchain App Template build with [OnchainKit](https://onchainkit.xyz), and ready to be deployed to Vercel.
+This demo showcases the integration of [Smart Wallet](https://smartwallet.dev) and [Resend](https://resend.com) to create a seamless user authentication experience. It demonstrates how to:
 
-Play with it live on https://onchain-app-template.vercel.app
+- Authenticate users with passkeys
+- Collect user emails during the authentication process
+- Utilize Smart Wallet for secure, user-friendly authentication
+- Leverage Resend for efficient email communication
 
-Have fun! ⛵️
+**Disclaimer:** This project is built by [@fkxpls](https://x.com/fkpxls) and is not officially associated with Coinbase.
 
-<br />
+## Features
 
-## Setup
+- Passkey-based authentication
+- Email collection alongside authentication
+- Integration with Smart Wallet and Resend APIs
 
-To ensure all components work seamlessly, set the following environment variables in your `.env` file using `.local.env.example` as a reference.
+## Getting Started
 
-You can find the API key on the [Coinbase Developer Portal's OnchainKit page](https://portal.cdp.coinbase.com/products/onchainkit). If you don't have an account, you will need to create one. 
+### Prerequisites
 
-You can find your Wallet Connector project ID at [Wallet Connect](https://cloud.walletconnect.com).
+Ensure you have the following:
+
+1. API key from [Coinbase Developer Portal's OnchainKit page](https://portal.cdp.coinbase.com/products/onchainkit)
+2. Project ID from [Wallet Connect](https://cloud.walletconnect.com)
+3. API key and Audience ID from [Resend](https://resend.com/docs/api-reference/introduction)
+
+### Setup
+
+1. Clone this repository
+2. Copy `.local.env.example` to `.env` and fill in your API keys:
 
 ```sh
-# See https://portal.cdp.coinbase.com/products/onchainkit
-NEXT_PUBLIC_CDP_API_KEY="GET_FROM_COINBASE_DEVELOPER_PLATFORM"
-
-# See https://cloud.walletconnect.com
-NEXT_PUBLIC_WC_PROJECT_ID="GET_FROM_WALLET_CONNECT"
+NEXT_PUBLIC_CDP_API_KEY="YOUR_COINBASE_API_KEY"
+NEXT_PUBLIC_WC_PROJECT_ID="YOUR_WALLET_CONNECT_PROJECT_ID"
+RESEND_API_KEY="YOUR_RESEND_API_KEY"
+RESEND_AUDIENCE_ID="YOUR_RESEND_AUDIENCE_ID"
 ```
-<br />
 
-## Locally run
+### Run the App
 
 ```sh
 # Install bun in case you don't have it
@@ -44,13 +51,10 @@ bun i
 # Run Next app
 bun run dev
 ```
-<br />
 
 ## Resources
 
-- [OnchainKit documentation](https://onchainkit.xyz)
-
-<br />
+- This app is built with [OnchainKit](https://onchainkit.xyz)
 
 ## License
 
