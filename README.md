@@ -52,6 +52,8 @@ bun i
 bun run dev
 ```
 
+**Note:** This project currently uses a Resend test account to send emails, which only works with the creator's personal email. To fully test the email functionality, please create your own Resend + CDP account and update the API keys in the `.env` file.
+
 ## Resources
 
 - This app is built with [OnchainKit](https://onchainkit.xyz)
