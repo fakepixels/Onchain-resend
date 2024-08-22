@@ -44,7 +44,6 @@ export default function TransactionWrapper({
   return (
     <div className="flex w-[450px]">
       <Transaction
-        address={address}
         contracts={contracts}
         className="w-[450px]"
         chainId={BASE_SEPOLIA_CHAIN_ID}
